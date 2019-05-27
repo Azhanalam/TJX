@@ -1,0 +1,37 @@
+.mat-toolbar.mat-primary {
+    background: red;
+    /* color: #fff;
+    rgb(124, 123, 123);*/
+  }
+
+
+  .ag-body {
+    .ag-row {
+      .ag-cell {
+        input[type=checkbox]:checked:after,
+        input[type=radio]:checked:after {
+          display: none;
+         }
+        input[type=checkbox]:after, input[type=radio]:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+.componentWrapper{
+  display:flex;
+  flex-wrap: wrap;
+  border:1px solid grey;
+  padding:15px 10px 10px;
+  /* width:95%; */
+  height:70px;
+}
+
+.componentWrapper .header{
+  margin-top:-25px;
+  margin-left:10px;
+  color:black;
+  background:white;
+  padding:2px 10px;
+}
