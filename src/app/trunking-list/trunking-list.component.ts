@@ -29,16 +29,24 @@ export class TrunkingListComponent implements OnInit {
       ];
 
       rowData = [
-          { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
-          { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
-          { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
-          { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
-          { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
-          { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
+          { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF08 OZP',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 06:00',PlannedFinishTime: '01/08/2019 15:00',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'},
+          { id: '', TripRef: '3818169', Driver: 'John Gilchrist', Vehicle:'PF08 OZL',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 15:00',PlannedFinishTime: '01/08/2011 23:00',Details:'Hatfield-LC,Stoke on Trent-PC,Hatfield-LC,Stoke on Trent-PC'},
+          { id: '', TripRef: '3818170', Driver: 'Mick Green', Vehicle:'PO59 JNF',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 16:00',PlannedFinishTime: '01/08/2011 23:59',Details:'Hatfield-LC,Stoke on Trent-PC,Hatfield-LC,Stoke on Trent-PC'},
+          { id: '', TripRef: '3818171', Driver: 'David Jackson', Vehicle:'PO60 AEL',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 17:00',PlannedFinishTime: '01/08/2011 23:59',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'},
+          { id: '', TripRef: '3818172', Driver: 'Mihia Rosia', Vehicle:'PO60 AEK',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 18:00',PlannedFinishTime: '02/08/2011 04:00',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'},
+          { id: '', TripRef: '382846', Driver: 'Robert Gibson', Vehicle:'PO58 BFM',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 22:00',PlannedFinishTime: '01/08/2011 23:59',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'},
       ];
 
       addTrunk(){
 this.router.navigate(["addTrunk"]);
+      }
+
+      ammendTrunk(details:any)
+      {
+        this.details={
+
+        }
+        this.router.navigate(["ammendTrunk"]);
       }
 
 }
