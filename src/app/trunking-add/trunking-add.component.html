@@ -1,0 +1,283 @@
+<app-header></app-header>
+
+
+    <div class="TRIP">
+  <h4>Trip Ref:</h4>
+</div>
+
+<div class="Reference">
+    <p>381869</p>
+  </div>
+
+  <div class="RUNDATE">
+      <h4 >Run Date:*</h4>
+    </div>
+
+    <div class="Date1">
+
+        <mat-form-field class="DATEPICK">
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+
+        <div class="VEHICLEBASE">
+            <h4 >Vehicle Base:*</h4>
+          </div>
+
+          <div class="SELECT">
+
+              <mat-form-field class="FORM2">
+                  <!-- <mat-label>Select your car (required)</mat-label> -->
+                  <select matNativeControl required >
+                    <option label="--select something --"></option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>
+
+
+              </div>
+
+
+              <div class="Driver">
+                  <h4 >Driver:*</h4>
+                </div>
+
+                <div class="SELECT1">
+
+                    <mat-form-field class="FORM2">
+                        <!-- <mat-label>Select your car (required)</mat-label> -->
+                        <select matNativeControl required >
+                          <option label="--select something --"></option>
+                          <option value="saab">Saab</option>
+                          <option value="mercedes">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                      </mat-form-field>
+                    </div>
+
+                    <div class="VEHICLEBASE">
+                        <h4 >Vehicle:*</h4>
+                      </div>
+
+                      <div class="SELECT">
+
+                          <mat-form-field class="FORM2">
+                              <!-- <mat-label>Select your car (required)</mat-label> -->
+                              <select matNativeControl required >
+                                <option label="--select something --"></option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                              </select>
+                            </mat-form-field>
+
+
+                          </div>
+
+
+              <div class="Driver">
+                  <h4 > Plnd Start Date Time:*</h4>
+                </div>
+
+          <div class="Date1">
+          <mat-form-field class="date" style="margin-top: -15px;">
+          <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="From date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+            <owl-date-time #dt></owl-date-time>
+            <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+          </mat-form-field>
+         </div>
+
+         <div class="VEHICLEBASE">
+            <h4 > Plnd Return Date Time:*</h4>
+          </div>
+
+    <div class="SELECT2">
+    <mat-form-field class="date" style="margin-top: -15px;">
+    <input matInput [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" placeholder="From date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+      <owl-date-time #dt1></owl-date-time>
+      <mat-datepicker-toggle matSuffix [for]="picker1" ></mat-datepicker-toggle>
+    </mat-form-field>
+   </div>
+
+
+   <div class="Driver">
+      <h4 > Actual Start Date Time:*</h4>
+    </div>
+
+<div class="Date1">
+<mat-form-field class="date" style="margin-top: -15px;">
+<input matInput [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" placeholder="From date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+<owl-date-time #dt2></owl-date-time>
+<mat-datepicker-toggle matSuffix [for]="picker2" ></mat-datepicker-toggle>
+</mat-form-field>
+</div>
+
+<div class="VEHICLEBASE">
+<h4 > Actual Return Date Time:*</h4>
+</div>
+
+<div class="SELECT2">
+<mat-form-field class="date" style="margin-top: -15px;">
+<input matInput [owlDateTimeTrigger]="dt3" [owlDateTime]="dt3" placeholder="From date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+<owl-date-time #dt3></owl-date-time>
+<mat-datepicker-toggle matSuffix [for]="picker3" ></mat-datepicker-toggle>
+</mat-form-field>
+</div>
+
+
+
+<mat-grid-list cols="1" rowHeight="450px">
+
+
+      <p class="TrunkDetail">Trunk Details</p>
+
+      <div class="TRUNKORIGIN">
+          <h4 >Trunk Origin:*</h4>
+        </div>
+
+        <div class="SELECTTRUNKORIGIN">
+
+            <mat-form-field class="FORM2">
+                <!-- <mat-label>Select your car (required)</mat-label> -->
+                <select matNativeControl required >
+                  <option label="--select something --"></option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </mat-form-field>
+            </div>
+
+            <div class="TRUNKDESTINATION">
+                <h4 >Trunk Destination:*</h4>
+              </div>
+
+              <div class="SELECTTRUNKDESTINATION">
+
+                  <mat-form-field class="FORM2">
+                      <!-- <mat-label>Select your car (required)</mat-label> -->
+                      <select matNativeControl required >
+                        <option label="--select something --"></option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </mat-form-field>
+
+
+                  </div>
+
+
+
+                  <div class="TRUNKORIGIN1">
+                      <h4 >Trunk Type:*</h4>
+                    </div>
+
+                    <div class="SELECTTRUNKORIGIN1">
+
+                        <mat-form-field class="FORM2">
+                            <!-- <mat-label>Select your car (required)</mat-label> -->
+                            <select matNativeControl required >
+                              <option label="--select something --"></option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </mat-form-field>
+                        </div>
+
+                        <div class="TRUNKDESTINATION1">
+                            <h4 >Trailer:*</h4>
+                          </div>
+
+                          <div class="SELECTTRUNKDESTINATION1">
+
+                              <mat-form-field class="FORM2">
+                                  <!-- <mat-label>Select your car (required)</mat-label> -->
+                                  <select matNativeControl required >
+                                    <option label="--select something --"></option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                  </select>
+                                </mat-form-field>
+
+
+                              </div>
+
+
+
+                              <div class="Driver">
+                                  <h4 > Departure Time:*</h4>
+                                </div>
+
+
+                            <div class="Date1">
+                            <mat-form-field class="date" style="margin-top: -15px;">
+                            <input matInput [owlDateTimeTrigger]="dt4" [owlDateTime]="dt4" placeholder="From date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+                            <owl-date-time #dt4></owl-date-time>
+                            <mat-datepicker-toggle matSuffix [for]="picker4" ></mat-datepicker-toggle>
+                            </mat-form-field>
+                            </div>
+
+                            <div class="VEHICLEBASE">
+                            <h4 > Arival Time:*</h4>
+                            </div>
+
+                            <div class="SELECT2">
+                            <mat-form-field class="date" style="margin-top: -15px;">
+                            <input matInput [owlDateTimeTrigger]="dt5" [owlDateTime]="dt5" placeholder="From date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+                            <owl-date-time #dt5></owl-date-time>
+                            <mat-datepicker-toggle matSuffix [for]="picker5" ></mat-datepicker-toggle>
+                            </mat-form-field>
+                            </div>
+
+                            <div class="Driver">
+                                <h4 >Departure ODO:*</h4>
+                              </div>
+                              <div class="ODO">
+                                  <mat-form-field style="width: 205px">
+                                      <input matInput placeholder="">572161
+                                    </mat-form-field>
+                              </div>
+
+                              <div class="VEHICLEBASE">
+                                  <h4 > Arival ODO:*</h4>
+                                  </div>
+
+                                  <div class="ArivalODO">
+                                      <mat-form-field style="width: 205px">
+                                          <input matInput placeholder="">
+                                          572161
+                                        </mat-form-field>
+                                  </div>
+
+
+
+
+                                  <div class="Driver">
+                                      <h4 > Comments:*</h4>
+                                    </div>
+                                    <div class="ODO">
+                                        <mat-form-field style="width: 205px; margin-top:20px">
+                                            <textarea matInput placeholder="Leave a comment"></textarea>
+                                          </mat-form-field>
+                                    </div>
+
+                                    <div class="Loading">
+                                        <h4 > Loading Comments:*</h4>
+                                        </div>
+
+                                        <div class="ArivalODO">
+                                            <mat-form-field style="width: 205px;margin-top: 15px">
+                                                <input matInput placeholder="">
+                                              </mat-form-field>
+                                        </div>
+
+
+
+  </mat-grid-list>

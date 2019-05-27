@@ -1,7 +1,7 @@
 <mat-toolbar color="primary"><b>Trunking List</b></mat-toolbar>
 <br/>
 <mat-card style="border-radius: 2px;overflow: hidden;">
-  <mat-card-header style="background-color:grey">
+  <mat-card-header style="background-color:#bbb8b8">
     <!-- <div mat-card-avatar></div> -->
     <mat-card-title style="margin-top:10px;">Trunking list</mat-card-title>
     <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
@@ -29,7 +29,7 @@
   </ag-grid-angular>
   </mat-card-content>
   <mat-card-actions style="text-align: center;">
-    <button mat-raised-button>Add</button>
+    <button mat-raised-button (click)="addTrunk()">Add</button>
     <button mat-raised-button>Ammend</button>
     <button mat-raised-button>Print</button>
     <button mat-raised-button>Delete</button>

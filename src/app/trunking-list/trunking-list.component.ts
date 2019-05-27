@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-trunking-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrunkingListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
@@ -35,5 +36,9 @@ export class TrunkingListComponent implements OnInit {
           { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
           { id: '', TripRef: '3818168', Driver: 'Roger Watt', Vehicle:'PF080ZP',RunDate:'01/08/2019',PlannedStartTime:'01/08/2019',PlannedFinishTime: '01/08/2019'},
       ];
-      ];
+
+      addTrunk(){
+this.router.navigate(["addTrunk"]);
+      }
+
 }
