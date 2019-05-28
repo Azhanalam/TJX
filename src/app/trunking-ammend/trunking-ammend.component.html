@@ -17,8 +17,8 @@
 
     <div class="Date1">
 
-        <mat-form-field class="DATEPICK">
-            <input matInput [matDatepicker]="picker" placeholder="">01/08/2011
+        <mat-form-field class="DATEPICK" style="margin-top: -10px">
+            <input matInput [matDatepicker]="picker" placeholder="01/08/2011">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
@@ -89,10 +89,10 @@
                 </div>
 
           <div class="Date1">
-          <mat-form-field class="date" style="margin-top: -15px;">
-          <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">01/08/2011 15:00
+          <mat-form-field class="date" style="margin-top: -6px;width:200px">
+          <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="01/08/2011 15:00" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
             <owl-date-time #dt></owl-date-time>
-            <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+            <!-- <mat-datepicker-toggle matSuffix [for]="picker6" ></mat-datepicker-toggle> -->
           </mat-form-field>
          </div>
 
@@ -101,10 +101,10 @@
           </div>
 
     <div class="SELECT2">
-    <mat-form-field class="date" style="margin-top: -15px;">
-    <input matInput [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" placeholder="" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">01/08/2011 23:00
+    <mat-form-field class="date" style="margin-top: -13px;width:200px">
+    <input matInput [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" placeholder="01/08/2011 23:00" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
       <owl-date-time #dt1></owl-date-time>
-      <mat-datepicker-toggle matSuffix [for]="picker1" ></mat-datepicker-toggle>
+      <!-- <mat-datepicker-toggle matSuffix [for]="picker1" ></mat-datepicker-toggle> -->
     </mat-form-field>
    </div>
 
@@ -114,10 +114,10 @@
     </div>
 
 <div class="Date1">
-<mat-form-field class="date" style="margin-top: -15px;">
+<mat-form-field class="date" style="margin-top: -10px;width:200px">
 <input matInput [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
 <owl-date-time #dt2></owl-date-time>
-<mat-datepicker-toggle matSuffix [for]="picker2" ></mat-datepicker-toggle>
+<!-- <mat-datepicker-toggle matSuffix [for]="picker2" ></mat-datepicker-toggle> -->
 </mat-form-field>
 </div>
 
@@ -126,10 +126,10 @@
 </div>
 
 <div class="SELECT2">
-<mat-form-field class="date" style="margin-top: -15px;">
+<mat-form-field class="date" style="margin-top: -13px;width:200px">
 <input matInput [owlDateTimeTrigger]="dt3" [owlDateTime]="dt3" placeholder="Choose date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
 <owl-date-time #dt3></owl-date-time>
-<mat-datepicker-toggle matSuffix [for]="picker3" ></mat-datepicker-toggle>
+<!-- <mat-datepicker-toggle matSuffix [for]="picker3" ></mat-datepicker-toggle> -->
 </mat-form-field>
 </div>
 
@@ -226,10 +226,10 @@
 
 
                             <div class="Date1">
-                            <mat-form-field class="date" style="margin-top: -15px;">
+                            <mat-form-field class="date" style="margin-top: -15px;width:200px">
                             <input matInput [owlDateTimeTrigger]="dt4" [owlDateTime]="dt4" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
                             <owl-date-time #dt4></owl-date-time>
-                            <mat-datepicker-toggle matSuffix [for]="picker4" ></mat-datepicker-toggle>
+                            <!-- <mat-datepicker-toggle matSuffix [for]="picker4" ></mat-datepicker-toggle> -->
                             </mat-form-field>
                             </div>
 
@@ -238,10 +238,10 @@
                             </div>
 
                             <div class="SELECT2">
-                            <mat-form-field class="date" style="margin-top: -15px;">
+                            <mat-form-field class="date" style="margin-top: -15px;width:200px">
                             <input matInput [owlDateTimeTrigger]="dt5" [owlDateTime]="dt5" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
                             <owl-date-time #dt5></owl-date-time>
-                            <mat-datepicker-toggle matSuffix [for]="picker5" ></mat-datepicker-toggle>
+                            <!-- <mat-datepicker-toggle matSuffix [for]="picker5" ></mat-datepicker-toggle> -->
                             </mat-form-field>
                             </div>
 
@@ -249,8 +249,8 @@
                                 <h4 >Departure ODO:*</h4>
                               </div>
                               <div class="ODO">
-                                  <mat-form-field style="width: 205px">
-                                      <input matInput placeholder="">572161
+                                  <mat-form-field style="width: 205px;margin-top:15px">
+                                      <input matInput placeholder="572161">
                                     </mat-form-field>
                               </div>
 
@@ -260,7 +260,7 @@
 
                                   <div class="ArivalODO">
                                       <mat-form-field style="width: 205px">
-                                          <input matInput placeholder="">572398
+                                          <input matInput placeholder="572398">
 
                                         </mat-form-field>
                                   </div>
@@ -282,7 +282,7 @@
                                         </div>
 
                                         <div class="loading">
-                                            <mat-form-field style="width: 205px;margin-top: 15px">
+                                            <mat-form-field style="width: 205px;margin-top: 15px;">
                                                 <input matInput placeholder="">
                                               </mat-form-field>
                                         </div>
