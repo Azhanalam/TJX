@@ -2,9 +2,9 @@
   <b>Trunking Add</b>
 </mat-toolbar>
 
-<mat-grid-list cols="1" rowHeight="850px" class="GRID">
+<mat-grid-list cols="1" rowHeight="800px" class="GRID">
     <div class="TRIP">
-  <h5>Trip Ref:</h5>
+  <p>Trip Ref:</p>
 </div>
 
 <div class="Reference">
@@ -12,7 +12,7 @@
   </div>
 
   <div class="RUNDATE">
-      <h5>Run Date:*</h5>
+      <p>Run Date:*</p>
     </div>
 
     <div class="Date1">
@@ -25,15 +25,16 @@
         </div>
 
         <div class="VEHICLEBASE">
-            <h5 >Vehicle Base:*</h5>
+            <p>Vehicle Base:*</p>
           </div>
 
           <div class="SELECT">
 
               <mat-form-field class="FORM2">
                   <!-- <mat-label>Select your car (required)</mat-label> -->
-                  <select matNativeControl required >
-                    <option label="Hatfield">Hatfield</option>
+                  <select matNativeControl required style="font-size:15px">
+                      <option label="--Select--" style="font-size:12px"></option>
+                    <option label="Hatfield" >Hatfield</option>
                     <option label="Walsall">Walsall</option>
                     <option label="Stoke on Trent">Stoke on Trent</option>
                   </select>
@@ -44,14 +45,15 @@
 
 
               <div class="Driver">
-                  <h5>Driver:*</h5>
+                  <p>Driver:*</p>
                 </div>
 
                 <div class="SELECT1">
 
                     <mat-form-field class="FORM2">
                         <!-- <mat-label>Select your car (required)</mat-label> -->
-                        <select matNativeControl required >
+                        <select matNativeControl required style="font-size:15px">
+                            <option label="--Select--" style="font-size:12px"></option>
                           <option label="John Gilchrist">John Gilchrist</option>
                           <option value="Roger Watt">Roger Watt</option>
                           <option value="Mick Green">Mick Green</option>
@@ -63,14 +65,15 @@
                     </div>
 
                     <div class="VEHICLEBASE">
-                        <h5>Vehicle:*</h5>
+                        <p>Vehicle:*</p>
                       </div>
 
                       <div class="SELECT">
 
                           <mat-form-field class="FORM2">
                               <!-- <mat-label>Select your car (required)</mat-label> -->
-                              <select matNativeControl required >
+                              <select matNativeControl required style="font-size:15px" >
+                                  <option label="--Select--" style="font-size:12px"></option>
                                 <option label="PF08 OZL">PF08 OZL</option>
                                 <option value="PF08 OZP">PF08 OZP</option>
                                 <option value="PO59 JNF">PO59 JNF</option>
@@ -85,10 +88,10 @@
 
 
               <div class="Driver">
-                  <h5> Plnd Start Date Time:*</h5>
+                  <p> Pland Start Date Time:*</p>
                 </div>
 
-          <div class="Date1">
+          <div class="Date5">
           <mat-form-field class="date" style="margin-top: -15px;">
           <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
             <owl-date-time #dt></owl-date-time>
@@ -97,7 +100,7 @@
          </div>
 
          <div class="VEHICLEBASE">
-            <h5> Plnd Return Date Time:*</h5>
+            <p> Pland Return Date Time:*</p>
           </div>
 
     <div class="SELECT2">
@@ -109,11 +112,11 @@
    </div>
 
 
-   <div class="Driver">
-      <h5> Actual Start Date Time:*</h5>
+   <div class="Driver4">
+      <p> Actual Start Date Time:*</p>
     </div>
 
-<div class="Date1">
+<div class="Date11">
 <mat-form-field class="date" style="margin-top: -15px;">
 <input matInput [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
 <owl-date-time #dt2></owl-date-time>
@@ -122,7 +125,7 @@
 </div>
 
 <div class="VEHICLEBASE">
-<h5> Actual Return Date Time:*</h5>
+<p> Actual Return Date Time:*</p>
 </div>
 
 <div class="SELECT2">
@@ -146,14 +149,15 @@
       <p class="TrunkDetail">Trunk Details</p>
 
       <div class="TRUNKORIGIN">
-          <h5 >Trunk Origin:*</h5>
+          <p >Trunk Origin:*</p>
         </div>
 
         <div class="SELECTTRUNKORIGIN">
 
             <mat-form-field class="FORM2">
                 <!-- <mat-label>Select your car (required)</mat-label> -->
-                <select matNativeControl required >
+                <select matNativeControl required style="font-size:15px">
+                    <option label="--Select--" style="font-size:12px"></option>
                   <option label="Hatfield LC">Hatfield LC</option>
                   <option value="Walsall PC">Walsall PC</option>
                   <option value="Stoke on Trent PC">Stoke on Trent PC</option>
@@ -163,14 +167,15 @@
             </div>
 
             <div class="TRUNKDESTINATION">
-                <h5>Trunk Destination:*</h5>
+                <p>Trunk Destination:*</p>
               </div>
 
               <div class="SELECTTRUNKDESTINATION">
 
                   <mat-form-field class="FORM2">
                       <!-- <mat-label>Select your car (required)</mat-label> -->
-                      <select matNativeControl required >
+                      <select matNativeControl required style="font-size:15px">
+                          <option label="--Select--" style="font-size:12px"></option>
                         <option label="Stoke On Trent-PC">Stoke On Trent-PC</option>
                         <option label="Hatfield-LC">Hatfield-LC</option>
                         <option value="Walsall-PC">Walsall-PC</option>
@@ -183,14 +188,15 @@
 
 
                   <div class="TRUNKORIGIN1">
-                      <h5>Trunk Type:*</h5>
+                      <p>Trunk Type:*</p>
                     </div>
 
                     <div class="SELECTTRUNKORIGIN1">
 
                         <mat-form-field class="FORM2">
                             <!-- <mat-label>Select your car (required)</mat-label> -->
-                            <select matNativeControl required >
+                            <select matNativeControl required style="font-size:15px">
+                                <option label="--Select--" style="font-size:12px"></option>
                               <option label="Empty TKHU Trunk">Empty TKHU Trunk</option>
                               <option value="Store Stoke Trunk">Etore Stoke Trunk</option>
 
@@ -199,14 +205,15 @@
                         </div>
 
                         <div class="TRUNKDESTINATION1">
-                            <h5>Trailer:*</h5>
+                            <p>Trailer:*</p>
                           </div>
 
                           <div class="SELECTTRUNKDESTINATION1">
 
                               <mat-form-field class="FORM2">
                                   <!-- <mat-label>Select your car (required)</mat-label> -->
-                                  <select matNativeControl required >
+                                  <select matNativeControl required style="font-size:15px">
+                                      <option label="--Select--" style="font-size:12px"></option>
                                     <option label="TKD0448">TKD0448</option>
                                     <option value="TK4468">TK4468</option>
 
@@ -218,12 +225,12 @@
 
 
 
-                              <div class="Driver">
-                                  <h5> Departure Time:*</h5>
+                              <div class="Driver11">
+                                  <p> Departure Time:*</p>
                                 </div>
 
 
-                            <div class="Date1">
+                            <div class="Date2">
                             <mat-form-field class="date" style="margin-top: -15px;">
                             <input matInput [owlDateTimeTrigger]="dt4" [owlDateTime]="dt4" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
                             <owl-date-time #dt4></owl-date-time>
@@ -231,11 +238,11 @@
                             </mat-form-field>
                             </div>
 
-                            <div class="VEHICLEBASE">
-                            <h5> Arival Time:*</h5>
+                            <div class="VEHICLEBASE1">
+                            <p> Arrival Time:*</p>
                             </div>
 
-                            <div class="SELECT2">
+                            <div class="SELECT3">
                             <mat-form-field class="date" style="margin-top: -15px;">
                             <input matInput [owlDateTimeTrigger]="dt5" [owlDateTime]="dt5" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
                             <owl-date-time #dt5></owl-date-time>
@@ -244,7 +251,7 @@
                             </div>
 
                             <div class="Depart">
-                                <h5 >Departure ODO:*</h5>
+                                <p >Departure ODO:*</p>
                               </div>
                               <div class="ODO">
                                   <mat-form-field style="width: 205px">
@@ -252,8 +259,8 @@
                                     </mat-form-field>
                               </div>
 
-                              <div class="VEHICLEBASE">
-                                  <h5> Arival ODO:*</h5>
+                              <div class="VEHICLEBASE2">
+                                  <p> Arival ODO:*</p>
                                   </div>
 
                                   <div class="ArivalODO">
@@ -266,16 +273,16 @@
 
 
                                   <div class="Comment">
-                                      <h5> Comments:*</h5>
+                                      <p> Comments:*</p>
                                     </div>
-                                    <div class="ODO">
+                                    <div class="ODO1">
                                         <mat-form-field style="width: 205px; margin-top:5px">
                                             <textarea matInput placeholder="Leave a comment"></textarea>
                                           </mat-form-field>
                                     </div>
 
                                     <div class="Loading">
-                                        <h5> Loading Comments:*</h5>
+                                        <p> Loading Comments:*</p>
                                         </div>
 
                                         <div class="loading">
@@ -325,16 +332,16 @@
                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
                        </table>
 
-                  <div style="margin-left: 1000px;margin-top: -150px;">
-                    <button mat-raised-button color="primary" style="width: 120px">Add New</button>
+                  <div style="margin-left: 700px;margin-top: -150px;">
+                    <button mat-raised-button color="primary" style="width: 100px">Add New</button>
                   </div>
 
-                  <div style="margin-left: 1000px;padding-top: 10px">
-                      <button color="primary" mat-raised-button style="width: 120px">Ammend</button>
+                  <div style="margin-left: 700px;padding-top: 10px">
+                      <button color="primary" mat-raised-button style="width: 100px">Amend</button>
                     </div>
 
-                    <div style="margin-left: 1000px;padding-top: 10px">
-                        <button color="primary" mat-raised-button style="width: 120px">Delete</button>
+                    <div style="margin-left: 700px;padding-top: 10px">
+                        <button color="primary" mat-raised-button style="width: 100px">Delete</button>
                       </div>
 
   </mat-grid-list>
@@ -346,7 +353,7 @@
 
 
 
-  <mat-grid-list cols="1" rowHeight="100px" class="LIST">
+  <mat-grid-list cols="1" rowHeight="100px" class="LIST1">
 
 <p style="margin-top: -17px;font-weight: 600;margin-left: 10px">Fuel Drawing</p>
 
@@ -365,6 +372,7 @@
       <div style="margin-left: 330px;margin-top: -60px">
           <mat-form-field style="width: 100px;margin-top: 1px">
               <select matNativeControl required >
+                  <option label="--Select--" style="font-size:12px"></option>
                   <option label="BP Garage">BP Garage</option>
                   <option value="BP Garage">BP Garage</option>
 
@@ -373,9 +381,9 @@
       </div>
 
       <div>
-          <p style="font-weight: 500;margin-left: 20px;">Milage</p>
+          <p style="font-weight: 500;margin-left: 20px;margin-top: -1px">Milage</p>
         </div>
-        <div style="margin-left: 100px;margin-top: -50px">
+        <div style="margin-left: 100px;margin-top: -51px">
             <mat-form-field style="width: 100px;margin-top: -15px">
                 <input matInput placeholder="">
               </mat-form-field>
