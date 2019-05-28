@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
@@ -12,21 +13,35 @@ import { MatNativeDateModule } from '@angular/material';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import {MatTableModule} from '@angular/material/table';
 
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { HeaderComponent } from './header/header.component';
 import { TrunkingAddComponent } from './trunking-add/trunking-add.component';
 import { LoginComponent } from './login/login.component';
 
+import { AppComponent } from './app.component';
+import { TrunkingListComponent } from './trunking-list/trunking-list.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AgGridModule } from 'ag-grid-angular';
+
+
+import {MatCardModule} from '@angular/material/card';
+
+
 @NgModule({
   declarations: [
-    
     AppComponent,
+    TrunkingListComponent,
     HeaderComponent,
     TrunkingAddComponent,
     LoginComponent
   ],
   imports: [
+    BrowserModule,
+    MatToolbarModule,
+    AppRoutingModule,
+    MatCardModule,
+    AgGridModule.withComponents([]),
+    MatButtonModule,
     MatTableModule,
     MatNativeDateModule,
     MatDatepickerModule,
@@ -37,9 +52,6 @@ import { LoginComponent } from './login/login.component';
     MatInputModule,
     FormsModule,
     MatFormFieldModule,
-    MatButtonModule,
-    MatToolbarModule,
-    BrowserModule,
     BrowserAnimationsModule
   ],
   providers: [],
