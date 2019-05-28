@@ -12,12 +12,80 @@
       <div class="header">
         Search Criteria
       </div>
-      Trip Ref:
-      Driver:
-      vehicle base:
-      Run Date From:
+
+      <div class="form-group" style="margin-left: -115px;">
+    <label for="Trip Ref">Trip Ref:</label>
+    <input name="Trip Ref" id="Trip Ref" style="margin-left:76px;"/>
+</div>
+
+      <!-- <label>Trip Ref:</label><input type="text" name="TripRef" style="height:15px; width:10%"> -->
+
+      <div class="form-group" style="margin-left: 150px;">
+    <label for="Driver">Driver:</label>
+</div>
+
+      <mat-form-field style="margin-top:-15px; margin-left:76px;">
+          <!-- <mat-label>Select your car (required)</mat-label> -->
+          <select matNativeControl required >
+            <option label="--Select from List --"></option>
+            <option value="Roger Watt">Roger Watt</option>
+            <option value="John Gilchrist">John Gilchrist</option>
+            <option value="Mick Green">Mick Green</option>
+            <option value="David Jackson">David Jackson</option>
+            <option value="Mihia Rosia">Mihia Rosia</option>
+            <option value="Robert Gibson">Robert Gibson</option>
+
+          </select>
+        </mat-form-field>
+
+        <div class="form-group" style="margin-left: 150px;">
+      <label for="Vehicle Base">Vehicle Base:</label>
+  </div>
+
+        <mat-form-field style="margin-top:-15px; margin-left:76px;">
+            <!-- <mat-label>Select your car (required)</mat-label> -->
+            <select matNativeControl required >
+              <option label="--Select from List --"></option>
+              <option value="Hatfield">Hatfield</option>
+              <option value="Walsall">Walsall</option>
+              <option value="Stoke on Trent">Stoke on Trent</option>
+
+
+            </select>
+          </mat-form-field>
+
+
+          <div class="form-group" style="margin-left: 7px;">
+          <label for="Trip Ref">Run Date From:</label>
+          <!-- <input name="Trip Ref" id="Trip Ref" /> -->
+          </div>
+
+          <mat-form-field style="margin-left:30px; margin-top:-20px">
+    <input matInput   [matDatepicker]="picker" placeholder="Choose a date">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+
+
+  <div class="form-group" style="margin-left: 105px;">
+  <label for="Trip Ref">Run Date To:</label>
+  <!-- <input name="Trip Ref" id="Trip Ref" /> -->
+  </div>
+
+  <mat-form-field style="margin-left:35px; margin-top:-20px">
+<input matInput  [matDatepicker]="pickerTo" placeholder="Choose a date">
+<mat-datepicker-toggle matSuffix [for]="pickerTo"></mat-datepicker-toggle>
+<mat-datepicker #pickerTo></mat-datepicker>
+</mat-form-field>
+
+
+<button mat-raised-button style="margin-left:290px; width:120px; color:black; background-color:#bbb8b8; margin-top:-10px; margin-bottom:10px">
+  Search</button>
+
+      <!-- Run Date From:
       Run Date To:
-      search
+      search -->
     </div>
     <div style="margin-bottom:40px"></div>
     <ag-grid-angular

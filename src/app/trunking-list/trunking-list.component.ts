@@ -12,6 +12,8 @@ export class TrunkingListComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
   title = 'app';
 
       columnDefs = [
