@@ -1,23 +1,23 @@
 
 
-    
+
     <body>
-        
-    
+
+
     <div class="loginbox">
       <div class="radio">
       <img src='../../assets/tjx.png' class="logo">
       <h1>Login Here</h1>
       <form >
-        
+
         <mat-form-field class="INPUT">
         <input matInput type="text" name="uname" id="uname" placeholder="Enter Username">
     </mat-form-field>
-        
+
         <mat-form-field class="INPUT">
         <input matInput type="password" name="pwd" id="pwd" placeholder="Enter Password">
     </mat-form-field>
-        <input type="button" name="" value="Login">
+        <input type="button" name="" value="Login" (click)="login()">
         <a href="#">Forgot password?</a><br>
         <a href="#">Sign Up</a>
       </form>

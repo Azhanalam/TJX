@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
 
 @Component({
-  selector: 'app-trunking-list',
-  templateUrl: './trunking-list.component.html',
-  styleUrls: ['./trunking-list.component.css']
+  selector: 'app-trunking-list2',
+  templateUrl: './trunking-list2.component.html',
+  styleUrls: ['./trunking-list2.component.css']
 })
-export class TrunkingListComponent implements OnInit {
+export class TrunkingList2Component implements OnInit {
 
-  constructor(private router:Router) { }
+    constructor(private router:Router) { }
 
   ngOnInit() {
   }
@@ -20,14 +20,14 @@ export class TrunkingListComponent implements OnInit {
           {headerName: '', field: 'id', width:50 ,checkboxSelection: false, cellRenderer: function cellTitle(params) {
   let cellValue = '<div class="ngSelectionCell"><input name="selected" type="radio"></div>';
   return cellValue;
-}},
+  }},
           {headerName: 'Trip Ref', field: 'TripRef' ,width:150},
           {headerName: 'Driver', field: 'Driver', width:150},
           {headerName: 'Vehicle', field: 'Vehicle', width:150},
           {headerName: 'Run Date', field: 'RunDate', width:150},
           {headerName: 'Planned Start Time', field: 'PlannedStartTime', width:200 },
           {headerName: 'Planned Finish Time', field: 'PlannedFinishTime' , width:200},
-          {headerName: 'Details', field: 'Details' , width:265}
+          {headerName: 'Details', field: 'Details' , width:300}
       ];
 
       rowData = [
@@ -37,10 +37,11 @@ export class TrunkingListComponent implements OnInit {
           { id: '', TripRef: '3818171', Driver: 'David Jackson', Vehicle:'PO60 AEL',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 17:00',PlannedFinishTime: '01/08/2011 23:59',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'},
           { id: '', TripRef: '3818172', Driver: 'Mihia Rosia', Vehicle:'PO60 AEK',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 18:00',PlannedFinishTime: '02/08/2011 04:00',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'},
           { id: '', TripRef: '382846', Driver: 'Robert Gibson', Vehicle:'PO58 BFM',RunDate:'01/08/2011',PlannedStartTime:'01/08/2011 22:00',PlannedFinishTime: '01/08/2011 23:59',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'},
+          { id: '', TripRef: '3818173', Driver: 'John Gilchrist', Vehicle:'PO59 JNF',RunDate:'28/05/2019',PlannedStartTime:'28/05/2019 17:00',PlannedFinishTime: '28/05/2019 20:00',Details:'Hatfield-LC, Walsall-PC,Walsall-PC,Hatfield-LC'}
       ];
 
       addTrunk(){
-this.router.navigate(["addTrunk"]);
+  this.router.navigate(["addTrunk"]);
       }
 
       ammendTrunk()

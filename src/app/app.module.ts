@@ -25,6 +25,8 @@ import { AgGridModule } from 'ag-grid-angular';
 
 
 import {MatCardModule} from '@angular/material/card';
+import { TrunkingAmmendComponent } from './trunking-ammend/trunking-ammend.component';
+import { TrunkingList2Component } from './trunking-list2/trunking-list2.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import {MatCardModule} from '@angular/material/card';
     TrunkingListComponent,
     HeaderComponent,
     TrunkingAddComponent,
-    LoginComponent
+    LoginComponent,
+    TrunkingAmmendComponent,
+    TrunkingList2Component
   ],
   imports: [
     BrowserModule,
