@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <b>Trunking Ammend</b>
+  <b>Trunking Amend</b>
 </mat-toolbar>
 
 <mat-grid-list cols="1" rowHeight="850px" class="GRID">
@@ -85,7 +85,7 @@
 
 
               <div class="Driver">
-                  <h4 > Plnd Start Date Time:*</h4>
+                  <h4 > Planned Start Date Time:*</h4>
                 </div>
 
           <div class="Date1">
@@ -97,7 +97,7 @@
          </div>
 
          <div class="VEHICLEBASE">
-            <h4 > Plnd Return Date Time:*</h4>
+            <h4 > Planned Return Date Time:*</h4>
           </div>
 
     <div class="SELECT2">
@@ -234,7 +234,7 @@
                             </div>
 
                             <div class="VEHICLEBASE">
-                            <h4 > Arival Time:*</h4>
+                            <h4 > Arrival Time:*</h4>
                             </div>
 
                             <div class="SELECT2">
@@ -250,17 +250,17 @@
                               </div>
                               <div class="ODO">
                                   <mat-form-field style="width: 205px;margin-top:15px">
-                                      <input matInput placeholder="572161">
+                                      <input matInput placeholder="">
                                     </mat-form-field>
                               </div>
 
                               <div class="VEHICLEBASE">
-                                  <h4 > Arival ODO:*</h4>
+                                  <h4 > Arrival ODO:*</h4>
                                   </div>
 
-                                  <div class="ArivalODO">
+                                  <div class="ArrivalODO">
                                       <mat-form-field style="width: 205px">
-                                          <input matInput placeholder="572398">
+                                          <input matInput placeholder="">
 
                                         </mat-form-field>
                                   </div>
@@ -333,7 +333,7 @@
                   </div>
 
                   <div style="margin-left: 1000px;padding-top: 10px">
-                      <button color="primary" mat-raised-button style="width: 120px">Ammend</button>
+                      <button color="primary" mat-raised-button style="width: 120px">Amend</button>
                     </div>
 
                     <div style="margin-left: 1000px;padding-top: 10px">
@@ -357,8 +357,8 @@
       <p style="font-weight: 600;margin-left: 20px">Fuel in Ltr</p>
     </div>
     <div style="margin-left: 100px;margin-top: -65px">
-        <mat-form-field style="width: 100px;margin-top: -15px">
-            <input matInput placeholder="">105.00
+        <mat-form-field style="width: 100px;">
+            <input matInput placeholder="">
           </mat-form-field>
     </div>
 
@@ -368,10 +368,9 @@
       <div style="margin-left: 320px;margin-top: -60px">
           <mat-form-field style="width: 150px;margin-top: 1px">
               <select matNativeControl required >
-                  <option label="BP Garage">BP Garage</option>
+                  <option label="--Select an option--">--Select an option--</option>
                   <option value="BP Garage">BP Garage</option>
-                  <option value="BP Garage">BP Garage</option>
-                  <option value="BP Garage">BP Garage</option>
+
                 </select>
             </mat-form-field>
       </div>
@@ -398,7 +397,7 @@
 </mat-grid-list>
 <br>
 <div style="margin-left: 50px">
-<button color="primary" mat-raised-button style="width: 80px;margin-left: 460px" (click)="ammendSave()">Save</button>
+<button color="primary" mat-raised-button style="width: 80px;margin-left: 460px" (click)="amendSave()">Save</button>
 </div>
 
 <div style="margin-top:-30px;margin-left: 40px">

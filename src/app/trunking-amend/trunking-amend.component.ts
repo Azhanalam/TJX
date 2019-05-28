@@ -16,11 +16,11 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 @Component({
-  selector: 'app-trunking-ammend',
-  templateUrl: './trunking-ammend.component.html',
-  styleUrls: ['./trunking-ammend.component.css']
+  selector: 'app-trunking-amend',
+  templateUrl: './trunking-amend.component.html',
+  styleUrls: ['./trunking-amend.component.css']
 })
-export class TrunkingAmmendComponent implements OnInit {
+export class TrunkingAmendComponent implements OnInit {
 
   displayedColumns: string[] = ['radio', 'trunkorigin', 'trunkdestination', 'trunktype','trailer','comment'];
   dataSource = ELEMENT_DATA;
@@ -31,7 +31,7 @@ export class TrunkingAmmendComponent implements OnInit {
   ngOnInit() {
   }
 
-ammendSave()
+amendSave()
 {
 this.router.navigate(["TrunkList3"]);
 }

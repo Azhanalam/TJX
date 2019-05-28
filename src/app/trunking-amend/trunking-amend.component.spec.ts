@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TrunkingAmmendComponent } from './trunking-ammend.component';
+import { TrunkingAmendComponent } from './trunking-amend.component';
 
-describe('TrunkingAmmendComponent', () => {
-  let component: TrunkingAmmendComponent;
-  let fixture: ComponentFixture<TrunkingAmmendComponent>;
+describe('TrunkingAmendComponent', () => {
+  let component: TrunkingAmendComponent;
+  let fixture: ComponentFixture<TrunkingAmendComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TrunkingAmmendComponent ]
+      declarations: [ TrunkingAmendComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TrunkingAmmendComponent);
+    fixture = TestBed.createComponent(TrunkingAmendComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -25,7 +25,7 @@ import { AgGridModule } from 'ag-grid-angular';
 
 
 import {MatCardModule} from '@angular/material/card';
-import { TrunkingAmmendComponent } from './trunking-ammend/trunking-ammend.component';
+import { TrunkingAmendComponent } from './trunking-amend/trunking-amend.component';
 import { TrunkingList2Component } from './trunking-list2/trunking-list2.component';
 import { TrunkingList3Component } from './trunking-list3/trunking-list3.component';
 import { TrunkingAdd1Component } from './trunking-add1/trunking-add1.component';
@@ -39,7 +39,7 @@ import { TrunkingAdd2Component } from './trunking-add2/trunking-add2.component';
     HeaderComponent,
     TrunkingAddComponent,
     LoginComponent,
-    TrunkingAmmendComponent,
+    TrunkingAmendComponent,
     TrunkingList2Component,
     TrunkingList3Component,
     TrunkingAdd1Component,

@@ -3,7 +3,7 @@
     /* color: #fff;
     rgb(124, 123, 123);*/
   }
-  
+
 .GRID {
     border: 1px solid rgb(49, 48, 48);
     margin-top: 1px;
@@ -11,7 +11,7 @@
     margin-left: 20px;
     margin-top: 10px;
   }
-  
+
   th{
     background: #39393a;
     color: white;
@@ -34,7 +34,7 @@
     margin-left: 700px;
     margin-top: -82px;
   }
-  .ArivalODO{
+  .ArrivalODO{
     margin-left: 1000px;
     margin-top: -70px;
   }
