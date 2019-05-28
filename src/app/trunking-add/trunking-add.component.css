@@ -3,12 +3,15 @@
     /* color: #fff;
     rgb(124, 123, 123);*/
   }
-
+  p{
+    font-size: 15px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+  }
 .GRID {
     border: 1px solid rgb(49, 48, 48);
     margin-top: 1px;
-    width: 1315px !important;
-    margin-left: 20px;
+    width: 1000px !important;
+    margin-left: 200px;
     margin-top: 10px;
   }
 
@@ -16,122 +19,169 @@
     background: #39393a;
     color: white;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
   }
   .LIST{
     border: 1px solid rgb(49, 48, 48);
     margin-top: 1px;
-    margin-left: 20px;
-    margin-top: 30px;
-    width: 1275px !important;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 900px !important;
+  }
+  .LIST1{
+    border: 1px solid rgb(49, 48, 48);
+    margin-top: 1px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 900px !important;
   }
   table {
     width: 70%;
+   font-size:14px;
     margin-top: 20px;
     margin-left: 20px;
   }
   .Loading{
-    margin-left: 700px;
-    margin-top: -82px;
+    margin-left: 440px;
+    margin-top: -75px;
   }
-  .ArrivalODO{
-    margin-left: 1000px;
-    margin-top: -70px;
+  .ArivalODO{
+    margin-left: 590px;
+    margin-top: -67px;
   }
   .loading{
-    margin-left: 1000px;
-    margin-top: -85px;
+    margin-left: 590px;
+    margin-top: -75px;
   }
   .ODO{
-      margin-left: 250px;
-      margin-top: -75px;
+      margin-left: 175px;
+      margin-top: -65px;
   }
   .TrunkDetail{
-      /* margin-top: -15px; */
+      margin-top: 2px;
       font-weight: 700;
-      margin-left: 7px;
+      margin-left: 60px;
   }
   .TRIP{
-      margin-left:20px;
+      margin-left:110px;
   }
   .Reference{
-      margin-left: 250px;
+      margin-left: 270px;
       margin-top: -39px;
   }
-  .Date1{
-      margin-left: 250px;
+  .Date2{
+      margin-left: 175px;
       margin-top: -50px;
   }
+  .Date5{
+    margin-left: 270px;
+    margin-top: -45px;
+  }
+  .Date11{
+    margin-left: 270px;
+    margin-top: -50px;
+}
+  .Date1{
+    margin-left: 270px;
+    margin-top: -50px;
+}
   .DATEPICK{
     margin-top: -15px;
   }
   .RUNDATE{
-      margin-top:10px;
-      margin-left:20px;
+      margin-top:20px;
+      margin-left:110px;
   }
   .VEHICLEBASE{
-      margin-left: 700px;
-      margin-top: -60px;
+      margin-left: 540px;
+      margin-top: -50px;
   }
+  .VEHICLEBASE2{
+    margin-left: 440px;
+    margin-top: -54px;
+}
+  .VEHICLEBASE1{
+    margin-left: 440px;
+    margin-top: -60px;
+}
   .SELECT{
-    margin-left: 1000px;
-    margin-top: -70px;
+    margin-left: 720px;
+    margin-top: -60px;
   }
   .SELECT1{
-    margin-left: 250px;
-    margin-top: -63px;
+    margin-left: 270px;
+    margin-top: -60px;
   }
+  .Driver4{
+      margin-top: -5px;
+      margin-left:110px;
+  }
+  .Driver1{
+    margin-top: -10px;
+    margin-left:60px;
+}
+.Driver11{
+  margin-top: -1px;
+  margin-left:60px;
+}
   .Driver{
-      margin-top: -18px;
-      margin-left:20px;
+      margin-top: -13px;
+      margin-left:110px;
   }
   .Depart{
-    margin-top: -10px;
-    margin-left:20px;
+    margin-top: 1px;
+    margin-left:60px;
 }
 .Comment{
-  margin-top: -10px;
-  margin-left:20px;
+  margin-top: -1px;
+  margin-left:60px;
+}
+.ODO1{
+     margin-left: 175px;
+      margin-top: -65px;
 }
 
-
 .TRUNKDESTINATION{
-      margin-left: 700px;
+      margin-left: 440px;
       margin-top: -57px;
   }
   .SELECTTRUNKDESTINATION{
-    margin-left: 1000px;
+    margin-left: 590px;
     margin-top: -65px;
   }
   .SELECTTRUNKORIGIN{
-    margin-left: 250px;
-    margin-top: -67px;
+    margin-left: 175px;
+    margin-top: -65px;
   }
   .TRUNKORIGIN{
       margin-top: -1px;
-      margin-left:20px;
+      margin-left:60px;
   }
 
   .TRUNKDESTINATION1{
-    margin-left: 700px;
+    margin-left: 440px;
     margin-top: -59px;
 }
 .SELECTTRUNKDESTINATION1{
-  margin-left: 1000px;
+  margin-left: 590px;
   margin-top: -65px;
 }
 .SELECTTRUNKORIGIN1{
-  margin-left: 250px;
-  margin-top: -67px;
+  margin-left: 175px;
+  margin-top: -64px;
 }
 .TRUNKORIGIN1{
-    margin-top: -25px;
-    margin-left:20px;
+    margin-top: 1px;
+    margin-left:60px;
 }
   .FORM2{
       width: 202px;
   }
   .SELECT2{
-    margin-left: 1000px;
-    margin-top: -55px;
+    margin-left: 720px;
+    margin-top: -43px;
+  }
+  .SELECT3{
+    margin-left: 590px;
+    margin-top: -49px;
   }
