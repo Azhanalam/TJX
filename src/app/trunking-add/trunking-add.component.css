@@ -1,12 +1,28 @@
-mat-grid-list {
+.GRID {
     border: 1px solid rgb(49, 48, 48);
     margin-top: 1px;
     width: 1320px !important;
     margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  th{
+    background: #39393a;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .LIST{
+    border: 1px solid rgb(49, 48, 48);
+    margin-top: 1px;
+    margin-left: 20px;
     margin-top: 30px;
+    width: 1275px !important;
   }
   table {
-    width: 100%;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   .Loading{
     margin-left: 700px;
@@ -14,11 +30,15 @@ mat-grid-list {
   }
   .ArivalODO{
     margin-left: 1000px;
+    margin-top: -70px;
+  }
+  .loading{
+    margin-left: 1000px;
     margin-top: -85px;
   }
   .ODO{
       margin-left: 250px;
-      margin-top: -85px;
+      margin-top: -75px;
   }
   .TrunkDetail{
       margin-top: -15px;
@@ -59,6 +79,14 @@ mat-grid-list {
       margin-top: -18px;
       margin-left:20px;
   }
+  .Depart{
+    margin-top: -10px;
+    margin-left:20px;
+}
+.Comment{
+  margin-top: -10px;
+  margin-left:20px;
+}
 
 
 .TRUNKDESTINATION{
