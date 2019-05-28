@@ -115,7 +115,7 @@
 
 <div class="Date1">
 <mat-form-field class="date" style="margin-top: -15px;">
-<input matInput [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+<input matInput  [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)" >
 <owl-date-time #dt2></owl-date-time>
 <mat-datepicker-toggle matSuffix [for]="picker2" ></mat-datepicker-toggle>
 </mat-form-field>
@@ -355,7 +355,7 @@
     </div>
     <div style="margin-left: 100px;margin-top: -65px">
         <mat-form-field style="width: 100px;">
-            <input matInput placeholder="">
+            <input matInput  placeholder="">
           </mat-form-field>
     </div>
 

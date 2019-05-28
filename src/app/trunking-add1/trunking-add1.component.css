@@ -1,0 +1,137 @@
+.mat-toolbar.mat-primary {
+    background: red;
+    /* color: #fff;
+    rgb(124, 123, 123);*/
+  }
+
+.GRID {
+    border: 1px solid rgb(49, 48, 48);
+    margin-top: 1px;
+    width: 1315px !important;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  th{
+    background: #39393a;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .LIST{
+    border: 1px solid rgb(49, 48, 48);
+    margin-top: 1px;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 1275px !important;
+  }
+  table {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .Loading{
+    margin-left: 700px;
+    margin-top: -82px;
+  }
+  .ArivalODO{
+    margin-left: 1000px;
+    margin-top: -70px;
+  }
+  .loading{
+    margin-left: 1000px;
+    margin-top: -85px;
+  }
+  .ODO{
+      margin-left: 250px;
+      margin-top: -75px;
+  }
+  .TrunkDetail{
+      /* margin-top: -15px; */
+      font-weight: 700;
+      margin-left: 7px;
+  }
+  .TRIP{
+      margin-left:20px;
+  }
+  .Reference{
+      margin-left: 250px;
+      margin-top: -39px;
+  }
+  .Date1{
+      margin-left: 250px;
+      margin-top: -50px;
+  }
+  .DATEPICK{
+    margin-top: -15px;
+  }
+  .RUNDATE{
+      margin-top:10px;
+      margin-left:20px;
+  }
+  .VEHICLEBASE{
+      margin-left: 700px;
+      margin-top: -60px;
+  }
+  .SELECT{
+    margin-left: 1000px;
+    margin-top: -70px;
+  }
+  .SELECT1{
+    margin-left: 250px;
+    margin-top: -63px;
+  }
+  .Driver{
+      margin-top: -18px;
+      margin-left:20px;
+  }
+  .Depart{
+    margin-top: -10px;
+    margin-left:20px;
+}
+.Comment{
+  margin-top: -10px;
+  margin-left:20px;
+}
+
+
+.TRUNKDESTINATION{
+      margin-left: 700px;
+      margin-top: -57px;
+  }
+  .SELECTTRUNKDESTINATION{
+    margin-left: 1000px;
+    margin-top: -65px;
+  }
+  .SELECTTRUNKORIGIN{
+    margin-left: 250px;
+    margin-top: -67px;
+  }
+  .TRUNKORIGIN{
+      margin-top: -1px;
+      margin-left:20px;
+  }
+
+  .TRUNKDESTINATION1{
+    margin-left: 700px;
+    margin-top: -59px;
+}
+.SELECTTRUNKDESTINATION1{
+  margin-left: 1000px;
+  margin-top: -65px;
+}
+.SELECTTRUNKORIGIN1{
+  margin-left: 250px;
+  margin-top: -67px;
+}
+.TRUNKORIGIN1{
+    margin-top: -25px;
+    margin-left:20px;
+}
+  .FORM2{
+      width: 202px;
+  }
+  .SELECT2{
+    margin-left: 1000px;
+    margin-top: -55px;
+  }

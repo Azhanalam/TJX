@@ -1,5 +1,5 @@
 <mat-toolbar color="primary">
-  <b>Trunking Ammend</b>
+  <b>Trunking Add</b>
 </mat-toolbar>
 
 <mat-grid-list cols="1" rowHeight="850px" class="GRID">
@@ -18,7 +18,7 @@
     <div class="Date1">
 
         <mat-form-field class="DATEPICK">
-            <input matInput [matDatepicker]="picker" placeholder="">01/08/2011
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
@@ -90,7 +90,7 @@
 
           <div class="Date1">
           <mat-form-field class="date" style="margin-top: -15px;">
-          <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">01/08/2011 15:00
+          <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
             <owl-date-time #dt></owl-date-time>
             <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
           </mat-form-field>
@@ -102,7 +102,7 @@
 
     <div class="SELECT2">
     <mat-form-field class="date" style="margin-top: -15px;">
-    <input matInput [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" placeholder="" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">01/08/2011 23:00
+    <input matInput [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
       <owl-date-time #dt1></owl-date-time>
       <mat-datepicker-toggle matSuffix [for]="picker1" ></mat-datepicker-toggle>
     </mat-form-field>
@@ -115,7 +115,7 @@
 
 <div class="Date1">
 <mat-form-field class="date" style="margin-top: -15px;">
-<input matInput [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+<input matInput  [owlDateTimeTrigger]="dt2" [owlDateTime]="dt2" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)" >
 <owl-date-time #dt2></owl-date-time>
 <mat-datepicker-toggle matSuffix [for]="picker2" ></mat-datepicker-toggle>
 </mat-form-field>
@@ -140,12 +140,10 @@
 
 
 
-
-<mat-grid-list cols="1" rowHeight="440px" class="LIST">
+<mat-grid-list cols="1" rowHeight="430px" class="LIST">
 
 
       <p class="TrunkDetail">Trunk Details</p>
-
 
       <div class="TRUNKORIGIN">
           <h4 >Trunk Origin:*</h4>
@@ -159,6 +157,7 @@
                   <option label="Hatfield LC">Hatfield LC</option>
                   <option value="Walsall PC">Walsall PC</option>
                   <option value="Stoke on Trent PC">Stoke on Trent PC</option>
+
                 </select>
               </mat-form-field>
             </div>
@@ -193,9 +192,8 @@
                             <!-- <mat-label>Select your car (required)</mat-label> -->
                             <select matNativeControl required >
                               <option label="Empty TKHU Trunk">Empty TKHU Trunk</option>
-                              <option value="Empty TKHU Trunk">Empty TKHU Trunk</option>
-                              <option value="Empty TKHU Trunk">Empty TKHU Trunk</option>
-                              <option value="Empty TKHU Trunk">Empty TKHU Trunk</option>
+                              <option value="Store Stoke Trunk">Etore Stoke Trunk</option>
+
                             </select>
                           </mat-form-field>
                         </div>
@@ -250,7 +248,7 @@
                               </div>
                               <div class="ODO">
                                   <mat-form-field style="width: 205px">
-                                      <input matInput placeholder="">572161
+                                      <input matInput placeholder="">
                                     </mat-form-field>
                               </div>
 
@@ -260,8 +258,7 @@
 
                                   <div class="ArivalODO">
                                       <mat-form-field style="width: 205px">
-                                          <input matInput placeholder="">572398
-
+                                          <input matInput placeholder="">
                                         </mat-form-field>
                                   </div>
 
@@ -292,7 +289,7 @@
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
           <ng-container matColumnDef="radio">
           <th mat-header-cell *matHeaderCellDef></th>
-            <td mat-cell *matCellDef="let element"> <input type="radio"> </td>
+            <td mat-cell *matCellDef="let element"> <input type="radio"></td>
               </ng-container>
 
 
@@ -329,7 +326,7 @@
                        </table>
 
                   <div style="margin-left: 1000px;margin-top: -150px;">
-                    <button mat-raised-button color="primary" style="width: 120px">Add New</button>
+                    <button mat-raised-button color="primary" style="width: 120px; margin-top:93px" (click)=addnew()>Add New</button>
                   </div>
 
                   <div style="margin-left: 1000px;padding-top: 10px">
@@ -357,27 +354,26 @@
       <p style="font-weight: 600;margin-left: 20px">Fuel in Ltr</p>
     </div>
     <div style="margin-left: 100px;margin-top: -65px">
-        <mat-form-field style="width: 100px;margin-top: -15px">
-            <input matInput placeholder="">105.00
+        <mat-form-field style="width: 100px;">
+            <input matInput  placeholder="">
           </mat-form-field>
     </div>
 
     <div>
         <p style="font-weight: 600;margin-left: 230px;margin-top: -40px">Fuel Site</p>
       </div>
-      <div style="margin-left: 320px;margin-top: -60px">
-          <mat-form-field style="width: 150px;margin-top: 1px">
+      <div style="margin-left: 330px;margin-top: -60px">
+          <mat-form-field style="width: 100px;margin-top: 1px">
               <select matNativeControl required >
                   <option label="BP Garage">BP Garage</option>
                   <option value="BP Garage">BP Garage</option>
-                  <option value="BP Garage">BP Garage</option>
-                  <option value="BP Garage">BP Garage</option>
+
                 </select>
             </mat-form-field>
       </div>
 
       <div>
-          <p style="font-weight: 600;margin-left: 20px;margin-top:-5px">Milage</p>
+          <p style="font-weight: 600;margin-left: 20px;">Milage</p>
         </div>
         <div style="margin-left: 100px;margin-top: -50px">
             <mat-form-field style="width: 100px;margin-top: -15px">
@@ -398,7 +394,7 @@
 </mat-grid-list>
 <br>
 <div style="margin-left: 50px">
-<button color="primary" mat-raised-button style="width: 80px;margin-left: 460px" (click)="ammendSave()">Save</button>
+<button color="primary" mat-raised-button style="width: 80px;margin-left: 460px" >Save</button>
 </div>
 
 <div style="margin-top:-30px;margin-left: 40px">

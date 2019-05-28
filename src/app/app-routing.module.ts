@@ -6,13 +6,20 @@ import { TrunkingListComponent } from './trunking-list/trunking-list.component';
 import { TrunkingAddComponent } from './trunking-add/trunking-add.component';
 import { TrunkingAmmendComponent } from './trunking-ammend/trunking-ammend.component';
 import { TrunkingList2Component } from './trunking-list2/trunking-list2.component';
+import { TrunkingList3Component } from './trunking-list3/trunking-list3.component';
+import { TrunkingAdd1Component } from './trunking-add1/trunking-add1.component';
+import { TrunkingAdd2Component } from './trunking-add2/trunking-add2.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
   {path:'TrunkList', component:TrunkingListComponent},
-  {path:'addTrunk',component:TrunkingAddComponent},
+  {path:'addTrunk',component:TrunkingAdd1Component},
   {path:'ammendTrunk',component:TrunkingAmmendComponent},
-  {path:'TrunkList2',component:TrunkingList2Component}
+  {path:'TrunkList2',component:TrunkingList2Component},
+  {path:'TrunkList3',component:TrunkingList3Component},
+  {path:'addTrunk2',component:TrunkingAdd2Component},
+  {path:'addTrunk3',component:TrunkingAddComponent}
+
 ];
 
 @NgModule({

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router} from '@angular/router';
 
 export interface PeriodicElement {
   radio:string;
@@ -23,10 +24,15 @@ export class TrunkingAmmendComponent implements OnInit {
 
   displayedColumns: string[] = ['radio', 'trunkorigin', 'trunkdestination', 'trunktype','trailer','comment'];
   dataSource = ELEMENT_DATA;
-  
-  constructor() { }
+
+  constructor(private router:Router) { }
+
 
   ngOnInit() {
   }
 
+ammendSave()
+{
+this.router.navigate(["TrunkList3"]);
+}
 }
