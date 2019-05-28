@@ -8,7 +8,7 @@
 </div>
 
 <div class="Reference">
-    <p>381869</p>
+    <p>381873</p>
   </div>
 
   <div class="RUNDATE">
@@ -18,7 +18,7 @@
     <div class="Date1">
 
         <mat-form-field class="DATEPICK">
-            <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+            <input matInput [matDatepicker]="picker" placeholder="28/05/2019">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
@@ -33,7 +33,7 @@
               <mat-form-field class="FORM2">
                   <!-- <mat-label>Select your car (required)</mat-label> -->
                   <select matNativeControl required style="font-size:15px">
-                      <option label="--Select--" style="font-size:12px"></option>
+                      <!-- <option label="--Select--" style="font-size:12px"></option> -->
                     <option label="Hatfield" >Hatfield</option>
                     <option label="Walsall">Walsall</option>
                     <option label="Stoke on Trent">Stoke on Trent</option>
@@ -53,7 +53,7 @@
                     <mat-form-field class="FORM2">
                         <!-- <mat-label>Select your car (required)</mat-label> -->
                         <select matNativeControl required style="font-size:15px">
-                            <option label="--Select--" style="font-size:12px"></option>
+                            <!-- <option label="--Select--" style="font-size:12px"></option> -->
                           <option label="John Gilchrist">John Gilchrist</option>
                           <option value="Roger Watt">Roger Watt</option>
                           <option value="Mick Green">Mick Green</option>
@@ -73,10 +73,11 @@
                           <mat-form-field class="FORM2">
                               <!-- <mat-label>Select your car (required)</mat-label> -->
                               <select matNativeControl required style="font-size:15px" >
-                                  <option label="--Select--" style="font-size:12px"></option>
+                                  <!-- <option label="--Select--" style="font-size:12px"></option> -->
+                                  <option value="PO59 JNF">PO59 JNF</option>
                                 <option label="PF08 OZL">PF08 OZL</option>
                                 <option value="PF08 OZP">PF08 OZP</option>
-                                <option value="PO59 JNF">PO59 JNF</option>
+                                <!-- <option value="PO59 JNF">PO59 JNF</option> -->
                                 <option value="PO60 AEK">PO60 AEK</option>
                                 <option value="PO60 AEL">PO60 AEL</option>
                                 <option value="PO58 BFM">PO58 BFM</option>
@@ -93,7 +94,7 @@
 
           <div class="Date5">
           <mat-form-field class="date" style="margin-top: -15px;">
-          <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+          <input matInput [owlDateTimeTrigger]="dt" [owlDateTime]="dt" placeholder="28/05/2019 17:00" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
             <owl-date-time #dt></owl-date-time>
             <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
           </mat-form-field>
@@ -105,7 +106,7 @@
 
     <div class="SELECT2">
     <mat-form-field class="date" style="margin-top: -15px;">
-    <input matInput [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" placeholder="Choose a date" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
+    <input matInput [owlDateTimeTrigger]="dt1" [owlDateTime]="dt1" placeholder="28/05/2019 20:00" [ngModel]="myDate" (ngModelChange)="updateMyDate($event)">
       <owl-date-time #dt1></owl-date-time>
       <mat-datepicker-toggle matSuffix [for]="picker1" ></mat-datepicker-toggle>
     </mat-form-field>
@@ -157,10 +158,11 @@
             <mat-form-field class="FORM2">
                 <!-- <mat-label>Select your car (required)</mat-label> -->
                 <select matNativeControl required style="font-size:15px">
-                    <option label="--Select--" style="font-size:12px"></option>
+                    <!-- <option label="--Select--" style="font-size:12px"></option> -->
+                    <option value="Stoke on Trent PC">Stoke on Trent PC</option>
                   <option label="Hatfield LC">Hatfield LC</option>
                   <option value="Walsall PC">Walsall PC</option>
-                  <option value="Stoke on Trent PC">Stoke on Trent PC</option>
+                 
 
                 </select>
               </mat-form-field>
@@ -175,9 +177,10 @@
                   <mat-form-field class="FORM2">
                       <!-- <mat-label>Select your car (required)</mat-label> -->
                       <select matNativeControl required style="font-size:15px">
-                          <option label="--Select--" style="font-size:12px"></option>
+                          <!-- <option label="--Select--" style="font-size:12px"></option> -->
+                          <option label="Hatfield-LC">Hatfield-LC</option>
                         <option label="Stoke On Trent-PC">Stoke On Trent-PC</option>
-                        <option label="Hatfield-LC">Hatfield-LC</option>
+                        
                         <option value="Walsall-PC">Walsall-PC</option>
                       </select>
                     </mat-form-field>
@@ -196,9 +199,10 @@
                         <mat-form-field class="FORM2">
                             <!-- <mat-label>Select your car (required)</mat-label> -->
                             <select matNativeControl required style="font-size:15px">
-                                <option label="--Select--" style="font-size:12px"></option>
+                                <!-- <option label="--Select--" style="font-size:12px"></option> -->
+                                <option value="Store Stoke Trunk">Store Stoke Trunk</option>
                               <option label="Empty TKHU Trunk">Empty TKHU Trunk</option>
-                              <option value="Store Stoke Trunk">Etore Stoke Trunk</option>
+                             
 
                             </select>
                           </mat-form-field>
@@ -213,9 +217,10 @@
                               <mat-form-field class="FORM2">
                                   <!-- <mat-label>Select your car (required)</mat-label> -->
                                   <select matNativeControl required style="font-size:15px">
-                                      <option label="--Select--" style="font-size:12px"></option>
+                                      <!-- <option label="--Select--" style="font-size:12px"></option> -->
+                                      <option value="TK4468">TK4468</option>
                                     <option label="TKD0448">TKD0448</option>
-                                    <option value="TK4468">TK4468</option>
+                                    
 
                                   </select>
                                 </mat-form-field>
@@ -374,14 +379,14 @@
               <select matNativeControl required >
                   <option label="--Select--" style="font-size:12px"></option>
                   <option label="BP Garage">BP Garage</option>
-                  <option value="BP Garage">BP Garage</option>
+                  <!-- <option value="BP Garage">BP Garage</option> -->
 
                 </select>
             </mat-form-field>
       </div>
 
       <div>
-          <p style="font-weight: 500;margin-left: 20px;margin-top: -1px">Milage</p>
+          <p style="font-weight: 500;margin-left: 20px;margin-top: -1px">Mileage</p>
         </div>
         <div style="margin-left: 100px;margin-top: -51px">
             <mat-form-field style="width: 100px;margin-top: -15px">
